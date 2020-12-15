@@ -1,0 +1,93 @@
+body { 
+    background-color: black;
+}
+
+h2{
+    display: block;
+    font-size: 1.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+/* floating button */
+.floating-btn{
+    width: 80px;
+    height: 80px;
+    background: rgb(90, 90, 90);
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    transition: background 0.25s;
+
+    /* BUTTON */
+    outline: blue;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.floating-btn:active{
+    background: #ff0000c9;
+}
+
+#imagenDentro img{
+    height: 100px;  
+    width: 100px;
+}
+
+.slide{
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #ffffff;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li a:before {
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    color: #ff0040;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
